@@ -7,44 +7,42 @@
     <title>Praktikum HTML</title>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <th>Hari</th>
-            <th>Mata Kuliah</th>
-            <th>Dosen</th>
-            <th>Jadwal</th>
-        </tr>
-        <tr>
-            <td>Senin</td>
-            <td>Sistem Pakar</td>
-            <td>Adie Wahyudi Oktavia Gama</td>
-            <td>08:00 - 10:30</td>
-        </tr>
-        <tr>
-            <td>Senin</td>
-            <td>Konfigurasi dan Administrasi Basis Data - Kelas A</td>
-            <td>Adie Wahyudi Oktavia Gama</td>
-            <td>10:45 - 14:05</td>
-        </tr>
-        <tr>
-            <td>Selasa</td>
-            <td>Internet Of Things</td>
-            <td>I Wayan Aditya Suranata</td>
-            <td>09:55 - 12:25</td>
-        </tr>
-        <tr>
-            <td>Rabu</td>
-            <td>Pemograman Web - Kelas A</td>
-            <td>Gede Humaswara Prathama</td>
-            <td>10:00 - 13:20</td>
-        </tr>
+    <h2>Formulir Pendaftaran : </h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="fullname" required>
+        <br>
 
-        <tr>
-            <td>Rabu</td>
-            <td>Keamanan Siber</td>
-            <td>I Wayan Aditya Suranata</td>
-            <td>13:35 - 116:05</td>
-        </tr>
-    </table>
+        <label for="email">Email:</label>
+        <input placeholder="Dewa@mail.com" type="email" id="email" name="email" required>
+
+        <!-- <br>
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="4" required></textarea> -->
+
+        <br><br>
+        
+        <label for="checkbox">Jenis Kelamin :</label><br>
+        <input type="checkbox">Laki - Laki><br>
+        <input type="checkbox">Perempuan><br>
+        
+        <br>
+        <label for="color">Pilih warna kesukaan anda : </label><br>
+        <input type="color" name="color">
+
+        <br><br>
+        <label for="date">Tanggal Lahir : </label><br>
+        <input type="date" name="tgl_lahir">
+
+        <br><br>
+        <label for="file">Lampirkan surat terkait </label><br>
+        <input type="file" name="file">
+
+        <br><br>
+        <label for="tel">Masukan No telp </label><br>
+        <input type="tel" name="tel">
+        <br> <br>   
+        <input style="padding: 10px 20px;" type="submit">
+    </form>
 </body>
 </html>
